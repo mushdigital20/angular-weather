@@ -1,1 +1,1 @@
-coffee node.coffee -n
+web: coffee node.coffee -n
