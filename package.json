@@ -1,0 +1,48 @@
+{
+  "name": "seed-project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "coffee node.coffee -n"
+  },
+  "author": "Pedro Mello (Mushdigital)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "bootstrap-webpack": "0.0.3",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.9.3",
+    "css-loader": "^0.16.0",
+    "ejs-loader": "^0.2.1",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "font-awesome-webpack": "0.0.3",
+    "less": "^2.5.1",
+    "less-loader": "^2.2.0",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.11.0",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "angular": "^1.4.3",
+    "angular-cookies": "^1.4.4",
+    "angular-google-maps": "^2.1.5",
+    "angular-resource": "^1.4.4",
+    "angular-route": "^1.4.4",
+    "angular-sanitize": "^1.4.4",
+    "angular-ui-bootstrap": "^0.13.3",
+    "bootstrap": "^3.3.5",
+    "ejs": "^2.3.3",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.13.3",
+    "font-awesome": "^4.4.0",
+    "google-maps": "^3.1.0",
+    "imports-loader": "^0.6.4",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "underscore": "^1.8.3"
+  }
+}

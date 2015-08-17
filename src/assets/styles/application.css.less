@@ -1,0 +1,134 @@
+
+ // @author Pedro Mello (MushDigital)
+ // @email: pedro@mushdigital.com
+ // @Date:   2015-08-14
+
+//Flex design
+.fill-height {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fill-height > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fill-width {
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.fill-width > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar
+{
+	margin-bottom: 0px!important;
+	border-radius: 0px!important;
+}
+
+.site-area > div:nth-child(1) 
+{
+  flex: 1;
+}
+.site-area > div:nth-child(2) {
+  flex: 8;
+}
+.site-area > div:nth-child(3) {
+  flex: 1;
+}
+
+.site-area > div p {
+  margin: 0;
+}
+
+//----------------------------------------------
+.content-area > div:nth-child(1) 
+{
+  flex: 1;
+}
+.content-area > div:nth-child(2) 
+{
+  flex: 10;
+}
+.content-area > div:nth-child(3) {
+  flex: 1!important;
+}
+
+.content-area > div p {
+  margin: 0;
+}
+//----------------------------------------------
+
+.forecast-results > div
+{
+  flex:1;
+  margin:3px;
+}
+
+html, body {
+  height: 100%;
+  color: #777777;
+}
+
+.forecast-results{
+  /*-webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;*/
+	min-height: 150px;
+}
+
+.closed{
+  /*-webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;*/
+  min-height: 150px;
+}
+
+.navbar-inverse a{
+	float:none;
+	font-size: 80%;
+	margin-top: 20px!important;
+}
+
+#search-block
+{
+	
+}
+
+// //Google maps
+.angular-google-map,
+.angular-google-map-container  { height: 100%; }
+
+ #map {
+	width:100%;
+    min-height:100%;
+    margin: 0px!important;
+    padding: 0px!important;
+}
+
+.panel-heading
+{
+  width:100%;
+  padding:5px;
+}
+
+.weather-result h7
+{
+  font-weight: bold;
+  font-size: 90%;
+}
+
+.weather-result img
+{
+  margin-top: -10px;
+}

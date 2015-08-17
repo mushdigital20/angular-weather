@@ -1,0 +1,27 @@
+<!--
+ * @author Pedro Mello (MushDigital)
+ * @email: pedro@mushdigital.com
+ * @Date:   2015-08-14
+-->
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  	<title><%= page_title %></title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="<%= author %>">
+</head>
+<body>
+    <script src="/bundle.js" type=""text/javascript""></script>
+    
+    <section class="site-area fill-height">
+      <% include ../templates/header %>
+      <div>
+        <%- body %>
+      </div>
+      <% include ../templates/footer %>
+      
+    </section>
+
+</body>
+</html>

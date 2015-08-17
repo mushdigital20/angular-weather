@@ -1,0 +1,43 @@
+
+	<div class="navbar navbar-inverse">
+		<div class="row" style="margin-left:1px">
+			<div class="col-md-4">
+			<!-- <h5>Weather Forecast by City</h5> -->
+				<form ng-submit="submit()" name="form" novalidate>
+					<div class="input-group" ng-class="{'has-error':form.$submitted && form.$invalid}">
+						<input type="text" name="city" ng-model="city" ng-change="autocomplete()" class="form-control" placeholder="Enter the name of your city" first-responder required/>
+						<span class="input-group-btn">
+		        			<input type="submit" href="#/forecast" class="btn btn-primary pull-right" value="Forecast!" />
+		      			</span>
+					</div>
+					
+				</form>
+			</div>
+			<div class="col-md-2">
+				<div class="btn-group" role="group" aria-label="...">
+				  <button type="button" class="btn btn-default" ng-click="setTemperatureUnit('celsius')" ng-class="{'btn-primary':temperatureUnit=='celsius'}">&deg;C</button>
+				  <button type="button" class="btn btn-default" ng-click="setTemperatureUnit('fahrenheit')" ng-class="{'btn-primary':temperatureUnit=='fahrenheit'}">&deg;F</button>
+				  <button type="button" class="btn btn-default" ng-click="setTemperatureUnit('kelvin')" ng-class="{'btn-primary':temperatureUnit=='kelvin'}">K</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<div id='map' class='dark container-fluid'>
+			<ui-gmap-google-map center='map.center' zoom='map.zoom' streetViewControl="false">
+				<ui-gmap-layer type='WeatherLayer'
+				    namespace='weather'
+				    show='true'>
+				</ui-gmap-layer>
+				<ui-gmap-marker
+			        idKey='cityKey'
+			        coords='map.center'
+			        >
+			</ui-gmap-marker>
+			</ui-gmap-google-map>
+		</div>
+	</div>
+
+	<nav class="forecast-results navbar navbar-default fill-width" ng-class="{'closed':results.length}">
+		<forecast-day ng-repeat="result in results" result="result" date="date" convert="convertTemperature(temp)"></forecast-day>
+	</nav>
