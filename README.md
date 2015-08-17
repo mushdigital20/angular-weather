@@ -12,7 +12,7 @@ cd angular-weather
 # install dependencies
 npm install
 
-# then open your browser and go to http://localhost:8080
+# start the server
 npm start 
 
 # open your browser and go to http://localhost:8080
