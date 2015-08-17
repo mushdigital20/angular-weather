@@ -19,7 +19,7 @@ var config =  {
 	devtool: 'source-map',
 	entry:'./src/app.coffee',
 	output:{
-		path:path.join(root_path,'build'),
+		path:path.join(root_path,'target'),
 		filename:'bundle.js',
 	},
 	module: {
@@ -39,8 +39,8 @@ var config =  {
 	},
 	plugins:[
 		new webpack.HotModuleReplacementPlugin(),
-    	//new webpack.ProvidePlugin({_: "underscore"}),
     	new webpack.ProvidePlugin({$: "jquery",jQuery: "jquery","window.jQuery": "jquery"}),
+    	new webpack.optimize.UglifyJsPlugin({mangle: false, compress: false})
 	],
 	resolve: {
 		extensions: ['', '.js', '.json', '.coffee'] 
