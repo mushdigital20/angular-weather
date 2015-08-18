@@ -5,7 +5,7 @@
 */
 var webpack 			= require('webpack');
 var path 				= require('path');
-var root_path			= path.resolve(__dirname,'..');
+var root_path			= path.resolve(__dirname);
 var node_modules_path 	= path.resolve(root_path,'node_modules');
 var node_config_path 	= path.resolve(root_path,'config');
 var build_path 			= path.resolve(root_path, 'src');
